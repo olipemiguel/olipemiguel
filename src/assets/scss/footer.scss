@@ -1,0 +1,54 @@
+.Footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--footer-bg-color);
+  border-top: 1px solid var(--border-color);
+  .FooterRight {
+    .FooterRightBox {
+      display: flex;
+      gap: 0.98rem;
+      .FooterRightIcon {
+        font-size: clamp(1.04rem, 1.5vh, 0.94rem);
+        color: var(--footer-icon-color);
+        cursor: pointer;
+        &:hover,
+        &:focus,
+        &:active {
+          color: var(--footer-icon-color-hover);
+        }
+      }
+    }
+  }
+  .FooterLeft {
+    display: flex;
+    gap: 0.8rem;
+    .FooterLeftText {
+      cursor: pointer;
+      font-size: clamp(0.68rem, 1.5vh, 0.34rem);
+      color: var(--text-nav-menu);
+      text-decoration: none;
+      &:hover,
+      &:focus,
+      &:active {
+        color: var(--text-nav-menu-hover);
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .Footer {
+    .FooterLeft {
+      .FooterLeftText {
+        font-size: clamp(0.51rem, 1.5vh, 0.34rem);
+      }
+    }
+    .FooterRight {
+      .FooterRightBox {
+        .FooterRightIcon {
+          font-size: clamp(0.78rem, 1.5vh, 0.64rem);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,85 @@
+.HeaderLayout {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 1px solid var(--border-color);
+  .HeaderBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .HeaderTitle,
+    .HeaderTitleSpan {
+      font-size: clamp(1.88rem, 1.5vh, 0.94rem);
+      font-family: "Poppins", "Roboto", "Roboto Mono", "Krona One", sans-serif;
+      font-weight: 300;
+      color: var(--text);
+      letter-spacing: 1px;
+    }
+    .HeaderTitle {
+      color: var(--text-color);
+    }
+  }
+  .HeaderMenu {
+    display: flex;
+    .HeaderNav {
+      display: flex;
+      gap: 1.21rem;
+      .HeaderMenuNav {
+        color: var(--text-nav-menu);
+        font-weight: 500;
+        letter-spacing: 0.1rem;
+        text-decoration: none;
+        &:hover,
+        &:focus,
+        &:active {
+          color: var(--text-nav-menu-hover);
+        }
+      }
+    }
+    .HeaderMenuMobile {
+      display: none;
+      font-size: clamp(1.28rem, 1.5vh, 0.94rem);
+      color: var(--text-nav-menu);
+      cursor: pointer;
+      &:hover,
+      &:focus,
+      &:active {
+        color: var(--text);
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .HeaderLayout {
+    .HeaderBox {
+      .HeaderTitle,
+      .HeaderTitleSpan {
+        font-size: clamp(1.28rem, 1.5vh, 0.74rem);
+        font-family: "Poppins", "Roboto", "Roboto Mono", "Krona One", sans-serif;
+        font-weight: 300;
+      }
+    }
+    .HeaderMenu {
+      .HeaderNav {
+        display: none;
+      }
+      .active {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        height: 91.4%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #151718;
+      }
+      .HeaderMenuMobile {
+        display: flex;
+      }
+    }
+  }
+}

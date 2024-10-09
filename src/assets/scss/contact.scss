@@ -1,0 +1,104 @@
+.Contact {
+  background-image: url("../../../public/img/__effects.png");
+  background-position: center;
+  padding-top: 1.5rem;
+  .ContactBox {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    height: 80%;
+    .ContactHeader {
+      .ContactHeaderTitle {
+        font-size: clamp(2.5rem, 3.5vh, 1.75rem);
+        color: var(--text-color);
+        text-align: center;
+      }
+    }
+    .ContactForm {
+      width: 50rem;
+      .ContactFormBox {
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+        .ContactFormTopBox {
+          display: flex;
+          gap: 0.8rem;
+          align-items: center;
+          .FormButton {
+            background-color: var(--contact-bg-color);
+            color: var(--text-color);
+            border: none;
+            padding: 0.7rem 1.5rem;
+            border-radius: 0.1rem;
+            font-size: clamp(0.9rem, 1.5vh, 0.75rem);
+            cursor: pointer;
+            &:hover {
+              background-color: var(--contact-bg-color-hover);
+              color: var(--contact-bg-color);
+              transition: all 0.5s ease-in-out;
+            }
+          }
+          textarea {
+            min-height: 20rem;
+            max-height: 23rem;
+          }
+          input,
+          textarea {
+            width: 100%;
+            width: 100%;
+            padding: 0.7rem;
+            border: 1px solid var(--contact-border-color);
+            border-radius: 0.1rem;
+            font-size: clamp(0.9rem, 1.5vh, 0.75rem);
+            background-color: var(--contact-bg-color);
+            color: var(--text-color);
+            &::placeholder {
+              color: var(--text-color);
+            }
+            &:active,
+            &:focus {
+              outline: none;
+              border: 1px solid var(--contact-border-color);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .Contact {
+    justify-content: flex-end;
+    .ContactBox {
+      justify-content: flex-start;
+      gap: 0.3rem;
+      .ContactHeader {
+        .ContactHeaderTitle {
+          font-size: clamp(1.27rem, 2.5vh, 0.65rem);
+        }
+      }
+      .ContactForm {
+        width: 100%;
+        .ContactFormBox {
+          .ContactFormTopBox {
+            flex-direction: column;
+            input,
+            textarea {
+              width: 70%;
+            }
+            &:last-child {
+              flex-direction: row;
+              align-items: center;
+              justify-content: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-device-width: 724px) and (orientation: landscape) {
+  .Contact {
+    height: 170vh !important;
+  }
+}

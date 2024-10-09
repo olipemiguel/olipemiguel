@@ -1,0 +1,133 @@
+.AppMainTemplate {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../.././public/img/effects.png");
+  background-position: 15% 55%;
+  .HomeRight {
+    width: 21.8rem;
+    height: 21.8rem;
+    .HomeRightLogo {
+      width: 100%;
+      height: 100%;
+      border: 3px solid var(--border-photo-color);
+      border-radius: 100%;
+      cursor: pointer;
+      &:hover {
+        border-color: var(--border-photo-color-hover);
+      }
+    }
+  }
+  .HomeLeft {
+    width: 38%;
+    height: 21.8rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.58rem;
+    .HomeLeftBoxTop {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+      .HomeLeftBoxTopText {
+        font-size: clamp(1.08rem, 1.5vh, 0.34rem);
+        color: var(--text-home);
+      }
+      .HomeLeftBoxTopSubText {
+        font-size: clamp(1.58rem, 1.5vh, 0.34rem);
+        color: var(--text-color);
+      }
+    }
+    .HomeLeftBoxMain {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 0.95rem;
+      .HomeLeftBox {
+        display: flex;
+        gap: 1rem;
+        cursor: pointer;
+        .HomeLeftIcon {
+          width: 15px;
+          font-size: clamp(1.28rem, 1.5vh, 0.64rem);
+          color: var(--text-home-color-icon);
+        }
+        .HomeLeftMail,
+        .HomeLeftTell {
+          font-size: clamp(1.28rem, 1.5vh, 0.64rem);
+          color: var(--text-home-color-box);
+          text-decoration: none;
+        }
+        .HomeLeftAddress {
+          font-size: clamp(1.18rem, 1.5vh, 0.64rem);
+          color: var(--text-home-color-box);
+          text-decoration: none;
+        }
+      }
+    }
+    .HomeBottomBox {
+      display: flex;
+      gap: 1.4rem;
+      align-items: center;
+      .HomeLeftIcon {
+        width: 15px;
+        font-size: clamp(1.28rem, 1.5vh, 0.64rem);
+        color: var(--text-home-color-icon-sub);
+        &:hover,
+        &:focus,
+        &:active {
+          color: var(--text-home-color-icon-sub-hover);
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .AppMainTemplate {
+    flex-direction: column-reverse;
+    gap: 1.3rem;
+    .HomeRight {
+      width: 15.8rem;
+      height: 15.8rem;
+    }
+    .HomeLeft {
+      .HomeLeftBoxTop {
+        .HomeLeftBoxTopText {
+          font-size: clamp(0.88rem, 1.5vh, 0.64rem);
+        }
+        .HomeLeftBoxTopSubText {
+          font-size: clamp(1.28rem, 1.5vh, 0.34rem);
+        }
+      }
+      .HomeLeftBoxMain {
+        .HomeLeftBox {
+          .HomeLeftIcon {
+            font-size: clamp(0.98rem, 1.5vh, 0.64rem);
+          }
+          .HomeLeftMail,
+          .HomeLeftTell {
+            font-size: clamp(0.98rem, 1.5vh, 0.64rem);
+          }
+          .HomeLeftAddress {
+            font-size: clamp(0.78rem, 1.5vh, 0.64rem);
+          }
+        }
+      }
+      .HomeBottomBox {
+        a {
+          .HomeLeftIcon {
+            font-size: clamp(0.88rem, 1.5vh, 0.64rem);
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-device-width: 724px) and (orientation: landscape) {
+  .AppMainTemplate {
+    height: 150vh !important;
+    padding-top: 30px;
+  }
+}
