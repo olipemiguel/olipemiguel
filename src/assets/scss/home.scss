@@ -86,6 +86,7 @@
 }
 @media only screen and (max-width: 1024px) {
   .AppMainTemplate {
+    height: 125vh !important;
     flex-direction: column-reverse;
     gap: 1.3rem;
     .HomeRight {

@@ -17,6 +17,7 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -o-box-sizing: border-box;
+  overflow: hidden;
 }
 html,
 body,
@@ -125,6 +126,7 @@ body {
   line-height: 1;
   list-style-type: none;
   font-size: 16px;
+  overflow-y: scroll;
   font-family: "Poppins", "Roboto", "Roboto Mono", "Krona One", sans-serif;
   background-image: linear-gradient(
     to right,

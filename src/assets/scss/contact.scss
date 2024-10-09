@@ -68,6 +68,7 @@
 }
 @media only screen and (max-width: 1024px) {
   .Contact {
+    height: 120vh !important;
     justify-content: flex-end;
     .ContactBox {
       justify-content: flex-start;
