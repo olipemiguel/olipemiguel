@@ -1,0 +1,39 @@
+.container-header{
+  width: 100dvw;
+  flex-direction: column;
+  .content-header{
+    width: 100%;
+    min-height: var(--header-height);
+    border-bottom: 1px solid var(--header-border-bottom-color);
+    background-color: var(--header-background-color);
+    justify-content: center;
+    align-content: center;
+    .container-main{
+      justify-content: space-between;
+      align-items: center;
+      .logo{
+        font-size: clamp(1.6rem, 1.2468rem + 0.2774vw, 1.9rem);
+        .logo-span{
+          color: var(--header-text-span-logo);
+        }
+      }
+    }
+  }
+  .content-header-animation{
+    animation: AnimationBorder 2s linear;
+  }
+  .mobile{
+    display: none;
+  }
+  .active{
+    display: flex !important;
+  }
+}
+
+@keyframes AnimationBorder{
+  from{
+    border-bottom-color: var(--header-border-bottom-color);
+  }to{
+    border-bottom-color: var(--header-text-span-logo);
+  }
+}

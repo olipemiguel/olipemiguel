@@ -1,0 +1,14 @@
+{
+  "pt":{
+    "home": "Início",
+    "about": "Sobre nós",
+    "service": "Projeto",
+    "contact": "Contato"
+  },
+  "en":{
+    "home": "Home",
+    "about": "About",
+    "service": "Project",
+    "contact": "Contact"
+  }
+}

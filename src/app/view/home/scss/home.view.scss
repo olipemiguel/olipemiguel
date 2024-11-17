@@ -1,0 +1,141 @@
+.container-home{
+  width: 100dvw;
+  height: calc(100dvh - var(--header-height));
+  background-image: url("../../../../assets/images/effects.one.png");
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  .container-content{
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    .container-summary{
+      width: 500px;
+      gap: 1.2rem;
+      flex-direction: column;
+      .summary-top{
+        height: 55px;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        overflow: hidden;
+        .summary-title{
+          font-size: clamp(1rem, 1.2468rem + 0.2774vw, 0.64rem);
+          font-weight: 600;
+          color: var(--header-color-text);
+        }
+        .summary-sub{
+          font-size: clamp(2.4rem, 1.08rem + 0.2774vw, 1.24rem);
+          font-weight: 500;
+          color: var(--home-text-red);
+          animation: summarySub 4.3s ease-in-out;
+        }
+      }
+      .summary-content{
+        flex-direction: column;
+        gap: 0.8rem;
+        .summary-text{
+          font-size: clamp(1.3rem, 1.08rem + 0.2774vw, 0.8rem);
+          font-weight: 500;
+          gap: 0.64rem;
+          .summary-icon{
+            width: 30px;
+            color: #C0953F;
+          }
+        }
+      }
+      .summary-bottom{
+        align-items: center;
+        gap: 1.3rem;
+        .summary-icon{
+          color: #f7f7f7;
+          font-size: clamp(1.3rem, 1.08rem + 0.2774vw, 0.8rem);
+          transition: all 1.2s ease-in-out;
+          &:hover,&:focus,&:active{
+            color: var(--home-text-red);
+          }
+        }
+      }
+    }
+    .container-images{
+      max-width: 370px;
+      width: 80%;
+      .container-photo{
+        animation: 4.4s AnimationPhoto linear infinite;
+        border: 2px solid #C0953F;
+        border-radius: 100%;
+      }
+    }
+  }
+}
+@keyframes summarySub {
+  from {
+    width: 0%;
+  }
+  to{
+    width: 100%;
+  }
+}
+@keyframes AnimationPhoto{
+  from {
+    border-color: #caa04b;
+  }
+  to{
+    border-color: #E6535A;
+  }
+}
+@media (max-width: 678px) {
+  .container-home{
+    height: unset !important;
+    margin-top: 2.5rem;
+    .container-content{
+      width: 100%;
+      flex-direction: column-reverse;
+      gap: 1.5rem;
+      .container-summary{
+        width: unset;
+        .summary-top{
+          height: 33px;
+          .summary-sub{
+            font-size: clamp(1.06rem, 1.08rem + 0.2774vw, 0.44rem);
+          }
+        }
+        .summary-content{
+          .summary-text{
+            font-size: clamp(1rem, 1.08rem + 0.2774vw, 0.44rem);
+            .summary-icon{
+              width: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 678px) and (max-width: 1100px){
+  .container-home{
+    height: unset !important;
+    margin-top: 2.5rem;
+    .container-content{
+      flex-direction: column-reverse !important;
+      gap: 1.5rem;
+    }
+  }
+}
+@media (max-width: 1100px) and (orientation: landscape) {
+  .container-home{
+    height: unset !important;
+    margin-top: 2.5rem;
+    .container-content{
+      flex-direction: column-reverse !important;
+      gap: 1.5rem;
+    }
+  }
+
+  .summary-top{
+    height: 43px !important;
+  }
+  .summary-sub{
+    font-size: clamp(1.58rem, 1.08rem + 0.2774vw, 0.44rem) !important;
+  }
+}

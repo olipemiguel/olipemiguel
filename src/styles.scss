@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* ? Resetting CSS */
+*:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
+all: unset;
+display: revert;
+}
+
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+}
+
+html {
+-moz-text-size-adjust: none;
+-webkit-text-size-adjust: none;
+text-size-adjust: none;
+}
+
+a, button {
+cursor: revert;
+}
+
+ol, ul, menu, summary {
+list-style: none;
+}
+
+ol {
+counter-reset: revert;
+}
+
+img {
+max-inline-size: 100%;
+max-block-size: 100%;
+}
+
+table {
+border-collapse: collapse;
+}
+
+input, textarea {
+--webkit-user-select: auto;
+-webkit-user-select: auto;
+-ms-user-select: auto;
+user-select: auto;
+}
+
+textarea {
+white-space: revert;
+}
+
+meter {
+-webkit-appearance: revert;
+appearance: revert;
+}
+
+:where(pre) {
+all: revert;
+box-sizing: border-box;
+}
+
+::placeholder {
+color: unset;
+}
+
+:where([hidden]) {
+display: none;
+}
+
+:where([contenteditable]:not([contenteditable="false"])) {
+-moz-user-modify: read-write;
+-webkit-user-modify: read-write;
+overflow-wrap: break-word;
+line-break: auto;
+--webkit-user-select: auto;
+-webkit-user-select: auto;
+-ms-user-select: auto;
+user-select: auto;
+}
+
+:where([draggable="true"]) {
+-webkit-user-drag: element;
+}
+
+:where(dialog:modal) {
+all: revert;
+box-sizing: border-box;
+}
+
+::-webkit-details-marker {
+display: none;
+}
+/* ? Resetting CSS in fonts */
+h1 {
+font-size: clamp(3.2rem, 2.5356rem + 1.3870vw, 4.2rem);
+}
+h2 {
+font-size: clamp(2.8rem, 2.4014rem + 0.8322vw, 3.4rem);
+}
+h3 {
+font-size: clamp(2.4rem, 2.1343rem + 0.5548vw, 2.8rem);
+}
+h4 {
+font-size: clamp(2.2rem, 2.0671rem + 0.2774vw, 2.4rem);
+}
+h5 {
+font-size: clamp(2rem, 1.8671rem + 0.2774vw, 2.2rem);
+}
+h6 {
+font-size: clamp(1.8rem, 1.6671rem + 0.2774vw, 2rem);
+}
+p {
+font-size: clamp(1.6rem, 1.2468rem + 0.2774vw, 1.9rem);
+}
+/* ? Resetting CSS [> END <] */
+.container-main{
+  width: 80%;
+}
+.flex{
+  display: flex;
+}
+:root{
+  --body-background-color: #1A1A19;
+  --body-color: #ffffff;
+  --header-height: 85px;
+  --header-border-bottom-color: #2a2a2b;
+  --header-background-color: transparent;
+  --header-text-span-logo: #E6535A;
+  --header-red: #8f2227;
+  --header-color-text: #cecece;
+  // ! Home
+  --home-text-red: #E6535A;
+}
+body{
+ background-color: var(--body-background-color);
+ color: var(--body-color);
+ font-size: 16px;
+ font-family: "Poppins","Roboto","Roboto Mono","Krona One",sans-serif;
+ line-height: 1;
+ list-style-type: none;
+ overflow-x: hidden;
+  &::-webkit-scrollbar {
+  width: 10px;
+  }
+  &::-webkit-scrollbar-track {
+    background: #2b2a2a;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #242424;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background: #272727;
+  }
+}

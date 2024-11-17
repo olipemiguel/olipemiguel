@@ -1,0 +1,58 @@
+{
+  "pt":{
+    "about":{
+      "title": "Sobre nós",
+      "description": ["Desenvolvedor Full-Stack com 2 anos de experiência em desenvolvimento de aplicações web e software. Possuo habilidades sólidas em linguagens como JavaScript, Python e PHP, além de experiência com frameworks modernos como React, VueJs, Angular e Node.js. Tenho um forte entendimento de bancos de dados relacionais e não relacionais, como MySQL e MongoDB.","Sou apaixonado por criar soluções inovadoras e eficientes, sempre focando na experiência do usuário e na performance da aplicação. Trabalho bem em equipes ágeis, colaborando estreitamente com designers e outros desenvolvedores para entregar produtos de alta qualidade. Estou sempre em busca de aprender novas tecnologias e aprimorar minhas habilidades."],
+      "skill" : ["NODE JS","TYPE SCRIPT","ANGULAR","REACT","VUE JS","PHP","SCSS","GIT","HTML","CSS","MYSQL"]
+    },
+    "details":{
+      "title": "Detalhes",
+      "aboutMe": [
+        {
+          "name": "Nome:",
+          "value" : "Felipe Miguel"
+        },
+        {
+          "age": "Idade:",
+          "value" : "20 Anos"
+        },
+        {
+          "idiom": "Idiomas:",
+          "value" : "Portuguese & English"
+        },
+        {
+          "location": "Localização:",
+          "value" : "019 Campinas, São Paulo"
+        }
+      ]
+    }
+  },
+  "en":{
+    "about":{
+      "title": "About Me",
+      "description": ["Full-Stack Developer with 2 years of experience in developing web applications and software. I have solid skills in languages ​​such as JavaScript, Python and PHP, as well as experience with modern frameworks such as React, VueJs, Angular and Node.js. I have a strong understanding of relational and non-relational databases such as MySQL and MongoDB.","I am passionate about creating innovative and efficient solutions, always focusing on the user experience and application performance. I work well in agile teams, collaborating closely with designers and other developers to deliver high-quality products. I am always looking to learn new technologies and improve my skills."],
+      "skill" : ["NODE JS","TYPE SCRIPT","ANGULAR","REACT","VUE JS","PHP","SCSS","GIT","HTML","CSS","MYSQL"]
+    },
+    "details":{
+      "title": "Details",
+      "aboutMe": [
+        {
+          "name": "Name:",
+          "value" : "Felipe Miguel"
+        },
+        {
+          "age": "Age:",
+          "value" : "20 Years"
+        },
+        {
+          "idiom": "Languages:",
+          "value" : "Portuguese & English"
+        },
+        {
+          "location": "Location:",
+          "value" : "019 Campinas, São Paulo"
+        }
+      ]
+    }
+  }
+}

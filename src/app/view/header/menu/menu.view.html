@@ -1,0 +1,19 @@
+<nav class="navigation-header">
+  <ul class="menu-header flex">
+    <a href="/home">
+      <li (click)="HeaderAnimation()" class="list-menu">{{headerHome}}</li>
+    </a>
+    <a href="/about">
+      <li (click)="HeaderAnimation()" class="list-menu">{{headerAbout}}</li>
+    </a>
+    <a href="/project">
+      <li (click)="HeaderAnimation()" class="list-menu">{{headerService}}</li>
+    </a>
+    <a href="/contact">
+      <li (click)="HeaderAnimation()" class="list-menu">{{headerContact}}</li>
+    </a>
+    <li class="MenuMobile" (click)="MenuMobile()">
+      <i class="fa-solid fa-bars"></i>
+    </li>
+  </ul>
+</nav>
